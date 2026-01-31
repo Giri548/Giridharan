@@ -1,0 +1,32 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Salary Expense Tracker</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <div class="container">
+    <h2>💰 Salary Expense Tracker</h2>
+    
+    <label>Enter Salary:</label>
+    <input type="number" id="salary" placeholder="Enter your salary">
+    <button onclick="setSalary()">Set Salary</button>
+    
+    <div class="balance" id="balance">Balance: ₹0</div>
+    
+    <label>Expense Name:</label>
+    <input type="text" id="expenseName" placeholder="Expense name">
+    
+    <label>Expense Amount:</label>
+    <input type="number" id="expenseAmount" placeholder="Expense amount">
+    
+    <button onclick="addExpense()">Add Expense</button>
+    
+    <h3>Expenses:</h3>
+    <ul id="expenseList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

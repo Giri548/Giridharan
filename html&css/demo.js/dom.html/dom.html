@@ -1,0 +1,74 @@
+ 
+        <input id="num1" placeholder="Enter number 1">
+        <input id="num2" placeholder="Enter number 2">
+        <button onclick="add()"> add</button>
+        <p id="result">Result</p>
+
+        <input id="sub1" placeholder="Enter number 1">
+        <input id="sub2" placeholder="Enter number 2">
+        <button onclick="sub()"> sub></button>
+        <p id="subresult">Result</p>
+
+        <input id="mul1" placeholder="Enter number 1">
+        <input id="mul2" placeholder="Enter number 2">
+        <button onclick="mul()"> mul</button>
+        <p id="mulresult">Result</p>
+ 
+        <input id="div1" placeholder="Enter number 1">
+        <input id="div2" placeholder="Enter number 2">
+        <button onclick="div()"> div</button>
+        <p id="divresult">Result</p>  
+       
+    <script>
+        var num1val=document.getElementById("num1")
+        var num2val=document.getElementById("num2")
+        var num3val=document.getElementById("result")
+
+        function add(){
+            var num1value=Number(num1val.value)
+            var num2value=Number(num2val.value)
+            var total=num1value+num2value
+            result.textContent="result:"+total
+        }
+    </script>
+
+    <script>    
+        var sub1val=document.getElementById("sub1")
+        var sub2val=document.getElementById("sub2")
+        var sub3val=document.getElementById(" subresult")
+
+        function sub(){
+            var sub1value=Number(sub1.value)
+            var sub2value=Number(sub2.value)
+            var total=sub1value-sub2value
+            subresult.textContent="subresult:"+total
+        }
+    </script>
+
+    <script>
+        var mul1val=document.getElementById("mul1")
+        var mul2val=document.getElementById("mul2")
+        var mul3val=document.getElementById("mulresult")
+
+        function mul(){
+            var mul1value=Number(mul1.value)
+            var mul2value=Number(mul2.value)
+            var total=mul1.value*mul2.value
+            mulresult.textContent="mulresult:"+total
+        }
+    </script>
+
+    <script>
+        var div1val=document.getElementById("div1")
+        var div2val=document.getElementById("div2")
+        var div3val=document.getElementById("div result")
+
+        function div(){
+            var mul1value=Number(div1.value)
+            var mul22value=Number(div2.value)
+            var total=div1.value/div2.value
+            divresult.textContent="divresult:"+total
+        }
+    </script>
+    </div>
+    

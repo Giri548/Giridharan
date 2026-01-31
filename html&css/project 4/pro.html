@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌤 Weather Dashboard</h1>
+
+  <button onclick="toggleJSON()">Toggle JSON Viewer</button>
+  <p id="maxTemp"></p> 
+
+  <table id="weatherTable">
+    <thead>
+      <tr>
+        <th>City</th>
+        <th>Temperature (°C)</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <pre id="jsonViewer" class="hidden"></pre>
+
+  <script src="demo.js"></script>
+</body>
+</html>

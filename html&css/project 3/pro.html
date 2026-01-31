@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Quiz App</h1>
+
+  
+  <div class="container">
+    <h2>Create Question</h2>
+
+    <input type="text" id="question" placeholder="Question Text">
+    <input type="text" id="optionA" placeholder="Option A">
+    <input type="text" id="optionB" placeholder="Option B">
+    <input type="text" id="optionC" placeholder="Option C">
+    <input type="text" id="optionD" placeholder="Option D">
+
+    <input type="text" id="correct" placeholder="Correct Option (A / B / C / D)">
+
+    <button onclick="addQuestion()">Add Question</button>
+    <p id="msg"></p>
+  </div>
+
+  
+  <div class="container">
+    <h2>Start Quiz</h2>
+    <button onclick="startQuiz()">Start Quiz</button>
+
+    <div id="quizBox" class="hide">
+      <h3 id="qText"></h3>
+      <div class="options">
+        <button onclick="selectOption('A')" id="btnA"></button>
+        <button onclick="selectOption('B')" id="btnB"></button>
+        <button onclick="selectOption('C')" id="btnC"></button>
+        <button onclick="selectOption('D')" id="btnD"></button>
+      </div>
+    </div>
+
+    <h3 id="result"></h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
